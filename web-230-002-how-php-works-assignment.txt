@@ -1,0 +1,6 @@
+How PHP Works Assignment
+1. Server side is a program that works from the server that is hosting your website. Client side is a program or app that works from the computer that is accessing your website.
+2. A scripting language is a program used in a run-time environment that is normally interpreted on the fly vs compiled. A programming language normally has to be compiled before use and while they can be used in a wider variety of ways they are not as quick or easy to use when interacting with a website.
+3. PHP is a scripting language.
+4. A customer makes a request from their client side search engine. The request is normally an HTTP Get or Post request.  The server gets the requests, verifies you, and then fulfills the request. They use the name/value pairs and parameters sent to determine how to fill the request. The updates are put in a file and returned to the requester.
+5. A Get is used to retrieve a page. It can be cached, remains in the browser history, can be bookmarked. It has a length restriction, should only be used to retrieve data, and should not be used for sensitive data. A Post is not cached, does not remain in the browser history, can't be bookmarked, and has no length restrictions.
