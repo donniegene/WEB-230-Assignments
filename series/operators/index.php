@@ -1,9 +1,9 @@
 <?php
 
-$text = 'Hello';
+  $text = 'Hello';
 
-$text .= ' World.';
+  $text .= ' World.';
 
-echo $text;
+  echo $text;
 
 ?>
