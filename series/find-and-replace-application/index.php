@@ -26,6 +26,24 @@
     }
   }
 
+/*
+7.  Form is HTML and not php. It gets added outside of the php code. By adding it at the end the
+php code gets run first then the form gets processed.
+
+8.  Action - Where to send form-data when the form si submitted.
+    Method - Specifies how to send the form-data.
+    GET - Appends data into the URL in name/value pairs
+          Never use on sensitive data.
+          Useful when a bookmark is needed
+    POST - Appends form-data inside the body of the HTTP request.
+
+9.  Type - Specifies the type of <input> to display.
+          ie. button, checkbox, search, reset, test, submit, etc.
+    Value - Specifies the value of the <input> element.
+          Button, reset,  submit - Defines the text on the button.
+          Text,  password, hidden - Defines the inital value.
+          Checkbox, radio, image - It is the value associated with the <input>.
+*/
 ?>
 
 <form action=""index.php" method="POST">
