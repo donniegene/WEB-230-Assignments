@@ -27,7 +27,8 @@
         determines how many characters to replace with the new text.
         */
       }
-        echo $text; //Displays the new text after the replacements
+ 			echo $text;
+		//Displays the new text after the replacements
     } else {
       echo 'Please fill in all the fields.';
     }
@@ -38,6 +39,7 @@
 <form action="index.php" method="POST">
   <textarea name="text" rows="6" cols="60"></textarea><br><br>
   <input type="submit" value="Find and Replace">
+<textarea><?php echo $text ?></textarea>	
 </form>
 
 <?php
