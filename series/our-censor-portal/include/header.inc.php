@@ -1,51 +1,28 @@
 <?php
 
-	$siteName = 'Insights | Communications Portal';
+	include_once('include/config.inc.php');
 
+	if(!isset($pageTitle)) { //Check to see if pageName is not empty
+		$pageTitle = $companyName; //If empty set page to site name
+	} else {
+		$pageTitle = $companyName.' - '.$pageTitle; //If not empty set to normal naming
+	}
+
+
+
+echo '<!doctype html>';
+echo '<html lang="en">';
+	echo '<head>';
+		echo '<meta charset="utf-8">';
+		echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+		echo '<title>'.$companyName.'</title>';
+		echo '<link rel="stylesheet" type="text/css" href="assets/css/style.css">';
+	echo '</head>';
+
+	echo '<body>';
+			echo '<header>';
+			echo 		'<h1>'.$companyName.'</h1>';
+			echo 		'<h2>On-going Training</h2>';
+		  echo '</header>';
+  echo '</body>';
 ?>
-
-<!doctype html>
-
-	<?php
-		//this is begining of the html the browser will process
-	?>
-<html>
-
-	<?php
-		//information used by the browser
-	?>
-
-	<head>
-		<meta charset="utf-8">
-		<?php
-			/*
-				displayed anywhere the title is used
-				for the browser, search engines, etc.
-			*/
-		?>
-		<title><?php echo $siteName; ?></title>
-		<?php
-			/*
-				used to display information about the
-				page by search engines and other sites
-				looking at our page.
-			*/
-		?>
-		<meta name="description" content="class assignment for web 230-prj-004."/>
-
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<script>
-			var siteName = '<?php echo $siteName; ?>';
-		</script>
-	</head>
-
-	<?php
-		//contnet displayed in the browser window
-	?>
-
-	<body>
-			<header>
-			<h1><a href="index.php"><?php echo $siteName; ?></a></h1>
-			<h2>WEB-230-PRJ-004</h2>
-		  </header>
-  </body>

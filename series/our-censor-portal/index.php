@@ -2,21 +2,16 @@
 
 	require_once('include/header.inc.php');
 
-?>
-<?php
-
   $offset = 0; //Set the offset at 0. Need to step thru all occurances of search
-  $findArray = array('Acme'); // Set text to found to Acme in an array.
-  $replaceArray = array('Insights'); // Set text to replace found text to Insights in an array.
 
   if (isset($_POST['text'])) {
     $text = $_POST['text']; //User input text
-    $search = $findArray[0]; //Text to seacrh for linked to array
-    $replace = $replaceArray[0]; //Text to replace the searched for text with within array
+		$search = 'Acme'; // Set text to found to Acme in an array.
+		$replace = 'Insights'; // Set text to replace found text to Insights in an array.
 
     $search_length = strlen($search); //Find the length of the search text
 
-    if (!empty($text)&&!empty($search)&&!empty($replace)) {
+    if (!empty($text)) {
       //Determines if there is input in each variable
 
       while ($strpos = strpos($text, $search, $offset)) { //Continues while true
@@ -36,10 +31,12 @@
 
 ?>
 
+
 <form action="index.php" method="POST">
-  <textarea name="text" rows="6" cols="60"></textarea><br><br>
+
+  <textarea name="text" rows="6" cols="60"><?php echo $text; ?></textarea><br><br>
   <input type="submit" value="Find and Replace">
-<textarea><?php echo $text ?></textarea>	
+
 </form>
 
 <?php
