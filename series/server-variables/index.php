@@ -21,9 +21,8 @@ if (isset($_POST['submit'])) {
 03. Explain how using the $script_name variable benefits us. -->
     <form action="<?php echo $script_name; ?>" method="POST">
     <input type="submit" name="submit" value="Submit"> </form>
-      This would be useful fi we had to have the user login and then we could
-      put the user back on their original page they were in when they had to
-      do the login.
+      This code would allow us to redirect a user back to a page they were on afte taking them off to perform
+      another action.
 */
 
 ?>
