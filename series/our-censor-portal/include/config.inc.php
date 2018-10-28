@@ -1,7 +1,7 @@
 <?php
   ini_set ('error_reporting', E_ALL);
 
-	$companyName = 'Insights';
+  $companyName = 'Insights';
   $pageTitle = $companyName.' | Communications Portal';
 
 ?>

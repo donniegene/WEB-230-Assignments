@@ -2,6 +2,7 @@
 
 	include_once('include/config.inc.php');
 	include_once('menu.data.php');
+	include_once('include/functions.inc.php');
 
 	if(!isset($pageTitle)) { //Check to see if pageName is not empty
 		$pageTitle = $companyName; //If empty set page to site name
@@ -21,26 +22,16 @@ echo '<html lang="en">';
 	echo '</head>';
 
 	echo '<body>';
-			echo '<header>';
-			echo 		'<h1>'.$pageTitle.'</h1>';
-			echo 		'<h2>On-going Training</h2>';
-		  echo '</header>';
+		echo '<header>';
+		echo 		'<h1>'.$pageTitle.'</h1>';
+		echo 		'<h2>On-going Training</h2>';
+		echo '<nav>';
+			menuBuilder($menuItems);
+		echo '</nav>';
+	  echo '</header>';
   echo '</body>';
-?>
 
-<?php
 
-	function menuBuilder($menuItems) {
-
-		echo('<ul>');
-
-		foreach($menuItems as $key => $value) {
-
-			echo('<li><a href="' .$value['MenuLink']. '">'.$value['MenuName'].'</a></li>');
-		}
-
-		echo('</ul>');
-	}
 
 	// menuBuilder();  ** Not passing the correct number of arguments
 
