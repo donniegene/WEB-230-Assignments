@@ -9,7 +9,7 @@
            $date = $_GET['date'];
            $year = $_GET['year'];
            if (!empty($day)&&!empty($date)&&!empty($year)) {  // Are the fields not empty, do echo
-                 echo 'OK';
+                 echo 'It is '.$day.' '.$date.' '.$year;
            } else { // If fields are empty do echo
                  echo 'Fill in all the fields.';
           }
