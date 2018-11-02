@@ -2,7 +2,16 @@
 
       $match = 'pass123';
 
-     //            01. Explain what the following if statement is doing.
+     /* 01. Explain what this variable will be used for and how. $match = 'pass123';
+            It is used to simulate the password that would be in the database. We
+            take the password collected in the POST and compare it to the $match password
+            to determine whick way to continue with the 'if' statement in the code.
+
+        02. Explain the process of the following if statment. if ( !empty($password))
+        { if($password == $match){ echo 'That is correct!'; }else{ echo 'That is incorrect!'; }
+        }else{ echo 'Please enter a password.'; }
+            Explained below as commented in the code.
+     */
 
       if (isset($_POST['password'])) {  // Do this block if password has been sent
             $password = $_POST['password'];  //Establish $password variable
