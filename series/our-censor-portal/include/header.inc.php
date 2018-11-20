@@ -23,16 +23,13 @@ echo '<html lang="en">';
 
 	echo '<body>';
 		echo '<header>';
-		echo 		'<h1>'.$pageTitle.'</h1>';
-		echo 		'<h2>On-going Training</h2>';
-		echo '<nav>';
-			menuBuilder($menuItems);
-		echo '</nav>';
-	  echo '</header>';
-  echo '</body>';
-
-
-
+			echo 		'<h1>'.$pageTitle.'</h1>';
+			echo 		'<h2>On-going Training</h2>';
+			echo '<nav>';
+				menuBuilder($menuItems);
+			echo '</nav>';
+	  	echo '</header>';
+ 
 	// menuBuilder();  ** Not passing the correct number of arguments
 
 ?>
