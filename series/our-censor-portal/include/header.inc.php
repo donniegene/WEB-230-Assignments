@@ -29,7 +29,5 @@ echo '<html lang="en">';
 				menuBuilder($menuItems);
 			echo '</nav>';
 	  	echo '</header>';
- 
-	// menuBuilder();  ** Not passing the correct number of arguments
 
 ?>
