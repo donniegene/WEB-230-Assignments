@@ -2,7 +2,7 @@
 require 'connect.inc.php'; //Connecting to the database or killing the code
 
       //Selecting the food & calories columns from the food table
-$query = "SELECT food, calories FROM food WHERE healthy_unhealthy = 'u' AND calories = 700 ORDER BY 'id' DESC";
+$query = "SELECT food, calories FROM food WHERE healthy_unhealthy = 'u' AND calories = 700 ORDER BY id DESC";
 
       //Checking to see if a query will work
 if ($query_run = mysqli_query($con, $query)) {
