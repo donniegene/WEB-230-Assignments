@@ -1,6 +1,6 @@
 <?php
 
-$conn_error = 'Could not connect.';
+$conn_error = 'Couldn\'t connect.';
 $mysql_host = 'localhost';
 $mysql_user = 'root';
 $mysql_pass  = '';
